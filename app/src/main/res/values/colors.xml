@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#CCCCCC</color>
+    <color name="buttonBackgroundColor">#000000</color>
+    <color name="buttonTextColor">#FFFFFFFF</color>
+    <color name="textColorPrimary">#000000</color> <!-- Черный для светлой темы -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- Белый для светлой темы -->
 </resources>
