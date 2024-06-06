@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     android:padding="16dp"
     tools:context=".FirstFragment">
 
@@ -11,11 +12,11 @@
         android:id="@+id/nameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/top_margin_name"
         android:gravity="center"
-        android:textColor="@color/black"
         android:text="@string/show_name"
-        android:textSize="56sp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_size_name"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,13 +26,13 @@
         android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/show_name"
+        android:src="@drawable/icon_tictactoe"
+        app:layout_constraintBottom_toTopOf="@id/startGameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameTextView"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_constraintBottom_toTopOf="@id/startGameButton"
-        android:src="@drawable/icon_tictactoe"
-        android:contentDescription="" />
+        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/startGameButton"
@@ -39,9 +40,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/buttonBackgroundColor"
         android:text="@string/start"
-        android:textSize="24sp"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/text_size_button"
         app:layout_constraintBottom_toTopOf="@id/exitGameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,11 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/fab_margin"
-
-        android:layout_marginBottom="160dp"
-        android:backgroundTint="@color/black"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:backgroundTint="@color/buttonBackgroundColor"
         android:text="@string/exit"
-        android:textSize="24sp"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/text_size_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
